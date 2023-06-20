@@ -24,11 +24,11 @@
 		F19AC0262A420236005D181F /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0252A420236005D181F /* Date+Components.swift */; };
 		F19AC0282A42070D005D181F /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0272A42070D005D181F /* MovieDetailsViewModel.swift */; };
 		F19AC0312A420D5C005D181F /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0302A420D5C005D181F /* MovieTableViewCell.swift */; };
-		F19AC0382A421E0E005D181F /* Guardians of The Galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0332A421E0E005D181F /* Guardians of The Galaxy.png */; };
-		F19AC0392A421E0E005D181F /* Knives Out.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0342A421E0E005D181F /* Knives Out.png */; };
-		F19AC03A2A421E0E005D181F /* Spider Man.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0352A421E0E005D181F /* Spider Man.png */; };
-		F19AC03B2A421E0E005D181F /* Tenet.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0362A421E0E005D181F /* Tenet.png */; };
-		F19AC03C2A421E0E005D181F /* Avengers.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0372A421E0E005D181F /* Avengers.png */; };
+		F1F5ADE82A42252500515B29 /* Spider Man.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F5ADE32A42252400515B29 /* Spider Man.png */; };
+		F1F5ADE92A42252500515B29 /* Tenet.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F5ADE42A42252400515B29 /* Tenet.png */; };
+		F1F5ADEA2A42252500515B29 /* Knives Out.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F5ADE52A42252500515B29 /* Knives Out.png */; };
+		F1F5ADEB2A42252500515B29 /* Avengers.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F5ADE62A42252500515B29 /* Avengers.png */; };
+		F1F5ADEC2A42252500515B29 /* Guardians of The Galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F5ADE72A42252500515B29 /* Guardians of The Galaxy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +53,11 @@
 		F19AC0252A420236005D181F /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
 		F19AC0272A42070D005D181F /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		F19AC0302A420D5C005D181F /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
-		F19AC0332A421E0E005D181F /* Guardians of The Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Guardians of The Galaxy.png"; path = "../../../../../Downloads/resources/Guardians of The Galaxy.png"; sourceTree = "<group>"; };
-		F19AC0342A421E0E005D181F /* Knives Out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Knives Out.png"; path = "../../../../../Downloads/resources/Knives Out.png"; sourceTree = "<group>"; };
-		F19AC0352A421E0E005D181F /* Spider Man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spider Man.png"; path = "../../../../../Downloads/resources/Spider Man.png"; sourceTree = "<group>"; };
-		F19AC0362A421E0E005D181F /* Tenet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tenet.png; path = ../../../../../Downloads/resources/Tenet.png; sourceTree = "<group>"; };
-		F19AC0372A421E0E005D181F /* Avengers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Avengers.png; path = ../../../../../Downloads/resources/Avengers.png; sourceTree = "<group>"; };
+		F1F5ADE32A42252400515B29 /* Spider Man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spider Man.png"; sourceTree = "<group>"; };
+		F1F5ADE42A42252400515B29 /* Tenet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tenet.png; sourceTree = "<group>"; };
+		F1F5ADE52A42252500515B29 /* Knives Out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knives Out.png"; sourceTree = "<group>"; };
+		F1F5ADE62A42252500515B29 /* Avengers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avengers.png; sourceTree = "<group>"; };
+		F1F5ADE72A42252500515B29 /* Guardians of The Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Guardians of The Galaxy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,11 +183,11 @@
 		F19AC0322A421E04005D181F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F19AC0372A421E0E005D181F /* Avengers.png */,
-				F19AC0332A421E0E005D181F /* Guardians of The Galaxy.png */,
-				F19AC0342A421E0E005D181F /* Knives Out.png */,
-				F19AC0352A421E0E005D181F /* Spider Man.png */,
-				F19AC0362A421E0E005D181F /* Tenet.png */,
+				F1F5ADE62A42252500515B29 /* Avengers.png */,
+				F1F5ADE72A42252500515B29 /* Guardians of The Galaxy.png */,
+				F1F5ADE52A42252500515B29 /* Knives Out.png */,
+				F1F5ADE32A42252400515B29 /* Spider Man.png */,
+				F1F5ADE42A42252400515B29 /* Tenet.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -252,14 +252,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19AC03A2A421E0E005D181F /* Spider Man.png in Resources */,
-				F19AC0382A421E0E005D181F /* Guardians of The Galaxy.png in Resources */,
-				F19AC03C2A421E0E005D181F /* Avengers.png in Resources */,
+				F1F5ADEC2A42252500515B29 /* Guardians of The Galaxy.png in Resources */,
+				F1F5ADEB2A42252500515B29 /* Avengers.png in Resources */,
+				F1F5ADE82A42252500515B29 /* Spider Man.png in Resources */,
+				F1F5ADE92A42252500515B29 /* Tenet.png in Resources */,
 				F19AC00A2A41F348005D181F /* LaunchScreen.storyboard in Resources */,
 				F19AC01A2A41F799005D181F /* Movies.plist in Resources */,
-				F19AC0392A421E0E005D181F /* Knives Out.png in Resources */,
-				F19AC03B2A421E0E005D181F /* Tenet.png in Resources */,
 				F19AC0072A41F348005D181F /* Assets.xcassets in Resources */,
+				F1F5ADEA2A42252500515B29 /* Knives Out.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
