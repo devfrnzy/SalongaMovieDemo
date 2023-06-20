@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E230D676783A8CC8412DEE1 /* Pods_Salonga_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C28278C0AC269EC0D46F5F /* Pods_Salonga_Demo.framework */; };
+		F19ABFFE2A41F347005D181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19ABFFD2A41F347005D181F /* AppDelegate.swift */; };
+		F19AC0002A41F347005D181F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19ABFFF2A41F347005D181F /* SceneDelegate.swift */; };
+		F19AC0072A41F348005D181F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0062A41F348005D181F /* Assets.xcassets */; };
+		F19AC00A2A41F348005D181F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0082A41F348005D181F /* LaunchScreen.storyboard */; };
+		F19AC0122A41F462005D181F /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0112A41F462005D181F /* MoviesViewController.swift */; };
+		F19AC0142A41F493005D181F /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0132A41F493005D181F /* GlobalHelpers.swift */; };
+		F19AC0162A41F5FC005D181F /* MoviesViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0152A41F5FC005D181F /* MoviesViewController+Table.swift */; };
+		F19AC0182A41F77D005D181F /* MovieDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0172A41F77D005D181F /* MovieDataManager.swift */; };
+		F19AC01A2A41F799005D181F /* Movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0192A41F799005D181F /* Movies.plist */; };
+		F19AC01C2A41F9D6005D181F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC01B2A41F9D6005D181F /* Movie.swift */; };
+		F19AC01E2A41FCAD005D181F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC01D2A41FCAD005D181F /* AppManager.swift */; };
+		F19AC0202A41FD99005D181F /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC01F2A41FD99005D181F /* MoviesViewModel.swift */; };
+		F19AC0242A41FF50005D181F /* MoviesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0232A41FF50005D181F /* MoviesCellViewModel.swift */; };
+		F19AC0262A420236005D181F /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0252A420236005D181F /* Date+Components.swift */; };
+		F19AC0282A42070D005D181F /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0272A42070D005D181F /* MovieDetailsViewModel.swift */; };
+		F19AC0312A420D5C005D181F /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AC0302A420D5C005D181F /* MovieTableViewCell.swift */; };
+		F19AC0382A421E0E005D181F /* Guardians of The Galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0332A421E0E005D181F /* Guardians of The Galaxy.png */; };
+		F19AC0392A421E0E005D181F /* Knives Out.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0342A421E0E005D181F /* Knives Out.png */; };
+		F19AC03A2A421E0E005D181F /* Spider Man.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0352A421E0E005D181F /* Spider Man.png */; };
+		F19AC03B2A421E0E005D181F /* Tenet.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0362A421E0E005D181F /* Tenet.png */; };
+		F19AC03C2A421E0E005D181F /* Avengers.png in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0372A421E0E005D181F /* Avengers.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12C28278C0AC269EC0D46F5F /* Pods_Salonga_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salonga_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAFEFBBA5ACE0C0C4AE1C91 /* Pods-Salonga_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salonga_Demo.debug.xcconfig"; path = "Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		E6D8F74B9DCE8CCB41D60C82 /* Pods-Salonga_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salonga_Demo.release.xcconfig"; path = "Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F19ABFFA2A41F347005D181F /* Salonga_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salonga_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19ABFFD2A41F347005D181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F19ABFFF2A41F347005D181F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F19AC0062A41F348005D181F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F19AC0092A41F348005D181F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F19AC00B2A41F348005D181F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19AC0112A41F462005D181F /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		F19AC0132A41F493005D181F /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		F19AC0152A41F5FC005D181F /* MoviesViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoviesViewController+Table.swift"; sourceTree = "<group>"; };
+		F19AC0172A41F77D005D181F /* MovieDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataManager.swift; sourceTree = "<group>"; };
+		F19AC0192A41F799005D181F /* Movies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Movies.plist; sourceTree = "<group>"; };
+		F19AC01B2A41F9D6005D181F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F19AC01D2A41FCAD005D181F /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		F19AC01F2A41FD99005D181F /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		F19AC0232A41FF50005D181F /* MoviesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCellViewModel.swift; sourceTree = "<group>"; };
+		F19AC0252A420236005D181F /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
+		F19AC0272A42070D005D181F /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		F19AC0302A420D5C005D181F /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		F19AC0332A421E0E005D181F /* Guardians of The Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Guardians of The Galaxy.png"; path = "../../../../../Downloads/resources/Guardians of The Galaxy.png"; sourceTree = "<group>"; };
+		F19AC0342A421E0E005D181F /* Knives Out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Knives Out.png"; path = "../../../../../Downloads/resources/Knives Out.png"; sourceTree = "<group>"; };
+		F19AC0352A421E0E005D181F /* Spider Man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spider Man.png"; path = "../../../../../Downloads/resources/Spider Man.png"; sourceTree = "<group>"; };
+		F19AC0362A421E0E005D181F /* Tenet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tenet.png; path = ../../../../../Downloads/resources/Tenet.png; sourceTree = "<group>"; };
+		F19AC0372A421E0E005D181F /* Avengers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Avengers.png; path = ../../../../../Downloads/resources/Avengers.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F19ABFF72A41F347005D181F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E230D676783A8CC8412DEE1 /* Pods_Salonga_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9261BF2EB08D6ACF9DDAD4F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12C28278C0AC269EC0D46F5F /* Pods_Salonga_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE163B4B4BE36F1B2FAD3142 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DAFEFBBA5ACE0C0C4AE1C91 /* Pods-Salonga_Demo.debug.xcconfig */,
+				E6D8F74B9DCE8CCB41D60C82 /* Pods-Salonga_Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F19ABFF12A41F347005D181F = {
+			isa = PBXGroup;
+			children = (
+				F19ABFFC2A41F347005D181F /* Salonga_Demo */,
+				F19ABFFB2A41F347005D181F /* Products */,
+				EE163B4B4BE36F1B2FAD3142 /* Pods */,
+				9261BF2EB08D6ACF9DDAD4F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F19ABFFB2A41F347005D181F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F19ABFFA2A41F347005D181F /* Salonga_Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F19ABFFC2A41F347005D181F /* Salonga_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC0322A421E04005D181F /* Resources */,
+				F19AC00B2A41F348005D181F /* Info.plist */,
+				F19ABFFD2A41F347005D181F /* AppDelegate.swift */,
+				F19ABFFF2A41F347005D181F /* SceneDelegate.swift */,
+				F19AC02D2A420C9E005D181F /* Managers */,
+				F19AC02B2A420BDB005D181F /* ViewControllers */,
+				F19AC02F2A420D3F005D181F /* Views */,
+				F19AC0292A420BA4005D181F /* ViewModels */,
+				F19AC02A2A420BCB005D181F /* Models */,
+				F19AC02E2A420CC8005D181F /* Helpers */,
+				F19AC0062A41F348005D181F /* Assets.xcassets */,
+				F19AC0082A41F348005D181F /* LaunchScreen.storyboard */,
+				F19AC0192A41F799005D181F /* Movies.plist */,
+			);
+			path = Salonga_Demo;
+			sourceTree = "<group>";
+		};
+		F19AC0292A420BA4005D181F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC0272A42070D005D181F /* MovieDetailsViewModel.swift */,
+				F19AC0232A41FF50005D181F /* MoviesCellViewModel.swift */,
+				F19AC01F2A41FD99005D181F /* MoviesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F19AC02A2A420BCB005D181F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC01B2A41F9D6005D181F /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F19AC02B2A420BDB005D181F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC0112A41F462005D181F /* MoviesViewController.swift */,
+				F19AC0152A41F5FC005D181F /* MoviesViewController+Table.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F19AC02D2A420C9E005D181F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC01D2A41FCAD005D181F /* AppManager.swift */,
+				F19AC0172A41F77D005D181F /* MovieDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F19AC02E2A420CC8005D181F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC0132A41F493005D181F /* GlobalHelpers.swift */,
+				F19AC0252A420236005D181F /* Date+Components.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F19AC02F2A420D3F005D181F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC0302A420D5C005D181F /* MovieTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F19AC0322A421E04005D181F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F19AC0372A421E0E005D181F /* Avengers.png */,
+				F19AC0332A421E0E005D181F /* Guardians of The Galaxy.png */,
+				F19AC0342A421E0E005D181F /* Knives Out.png */,
+				F19AC0352A421E0E005D181F /* Spider Man.png */,
+				F19AC0362A421E0E005D181F /* Tenet.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F19ABFF92A41F347005D181F /* Salonga_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F19AC00E2A41F348005D181F /* Build configuration list for PBXNativeTarget "Salonga_Demo" */;
+			buildPhases = (
+				500D1CF6C90C954049EED282 /* [CP] Check Pods Manifest.lock */,
+				F19ABFF62A41F347005D181F /* Sources */,
+				F19ABFF72A41F347005D181F /* Frameworks */,
+				F19ABFF82A41F347005D181F /* Resources */,
+				187AD35C86F6484F9F0775BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Salonga_Demo;
+			productName = Salonga_Demo;
+			productReference = F19ABFFA2A41F347005D181F /* Salonga_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F19ABFF22A41F347005D181F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F19ABFF92A41F347005D181F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F19ABFF52A41F347005D181F /* Build configuration list for PBXProject "Salonga_Demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F19ABFF12A41F347005D181F;
+			productRefGroup = F19ABFFB2A41F347005D181F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F19ABFF92A41F347005D181F /* Salonga_Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F19ABFF82A41F347005D181F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19AC03A2A421E0E005D181F /* Spider Man.png in Resources */,
+				F19AC0382A421E0E005D181F /* Guardians of The Galaxy.png in Resources */,
+				F19AC03C2A421E0E005D181F /* Avengers.png in Resources */,
+				F19AC00A2A41F348005D181F /* LaunchScreen.storyboard in Resources */,
+				F19AC01A2A41F799005D181F /* Movies.plist in Resources */,
+				F19AC0392A421E0E005D181F /* Knives Out.png in Resources */,
+				F19AC03B2A421E0E005D181F /* Tenet.png in Resources */,
+				F19AC0072A41F348005D181F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187AD35C86F6484F9F0775BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500D1CF6C90C954049EED282 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Salonga_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F19ABFF62A41F347005D181F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19ABFFE2A41F347005D181F /* AppDelegate.swift in Sources */,
+				F19AC0162A41F5FC005D181F /* MoviesViewController+Table.swift in Sources */,
+				F19AC0142A41F493005D181F /* GlobalHelpers.swift in Sources */,
+				F19AC0182A41F77D005D181F /* MovieDataManager.swift in Sources */,
+				F19AC0002A41F347005D181F /* SceneDelegate.swift in Sources */,
+				F19AC0262A420236005D181F /* Date+Components.swift in Sources */,
+				F19AC01E2A41FCAD005D181F /* AppManager.swift in Sources */,
+				F19AC0282A42070D005D181F /* MovieDetailsViewModel.swift in Sources */,
+				F19AC0242A41FF50005D181F /* MoviesCellViewModel.swift in Sources */,
+				F19AC01C2A41F9D6005D181F /* Movie.swift in Sources */,
+				F19AC0122A41F462005D181F /* MoviesViewController.swift in Sources */,
+				F19AC0202A41FD99005D181F /* MoviesViewModel.swift in Sources */,
+				F19AC0312A420D5C005D181F /* MovieTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F19AC0082A41F348005D181F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F19AC0092A41F348005D181F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F19AC00C2A41F348005D181F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F19AC00D2A41F348005D181F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F19AC00F2A41F348005D181F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAFEFBBA5ACE0C0C4AE1C91 /* Pods-Salonga_Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BWB9JT2PVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Salonga_Demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.salonga.Salonga-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F19AC0102A41F348005D181F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D8F74B9DCE8CCB41D60C82 /* Pods-Salonga_Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BWB9JT2PVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Salonga_Demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.salonga.Salonga-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F19ABFF52A41F347005D181F /* Build configuration list for PBXProject "Salonga_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19AC00C2A41F348005D181F /* Debug */,
+				F19AC00D2A41F348005D181F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F19AC00E2A41F348005D181F /* Build configuration list for PBXNativeTarget "Salonga_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19AC00F2A41F348005D181F /* Debug */,
+				F19AC0102A41F348005D181F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F19ABFF22A41F347005D181F /* Project object */;
+}

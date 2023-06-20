@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>1</string>
+		<key>title</key>
+		<string>Tenet</string>
+		<key>description</key>
+		<string>Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.</string>
+		<key>duration</key>
+		<string>2h 30min</string>
+		<key>genres</key>
+		<array>
+			<string>Action</string>
+			<string>Sci-Fi</string>
+		</array>
+		<key>releasedDate</key>
+		<string>3 September 2020</string>
+		<key>trailerLink</key>
+		<string>https://www.youtube.com/watch?v=LdOM0x0XDMo</string>
+		<key>imageName</key>
+		<string>Tenet.png</string>
+		<key>rating</key>
+		<string>7.8</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>2</string>
+		<key>title</key>
+		<string>Spider-Man: Into the Spider-Verse</string>
+		<key>description</key>
+		<string>Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.</string>
+		<key>duration</key>
+		<string>1h 57min</string>
+		<key>genres</key>
+		<array>
+			<string>Action</string>
+			<string>Animation</string>
+			<string>Adventure</string>
+		</array>
+		<key>releasedDate</key>
+		<string>14 December 2018</string>
+		<key>trailerLink</key>
+		<string>https://www.youtube.com/watch?v=tg52up16eq0</string>
+		<key>imageName</key>
+		<string>Spider Man.png</string>
+		<key>rating</key>
+		<string>8.4</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>3</string>
+		<key>title</key>
+		<string>Knives Out</string>
+		<key>description</key>
+		<string>A detective investigates the death of a patriarch of an eccentric, combative family.</string>
+		<key>duration</key>
+		<string>2h 10min</string>
+		<key>genres</key>
+		<array>
+			<string>Comedy</string>
+			<string>Crime</string>
+			<string>Drama</string>
+		</array>
+		<key>releasedDate</key>
+		<string>27 November 2019</string>
+		<key>trailerLink</key>
+		<string>https://www.youtube.com/watch?v=qGqiHJTsRkQ</string>
+		<key>imageName</key>
+		<string>Knives Out.png</string>
+		<key>rating</key>
+		<string>7.9</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>4</string>
+		<key>title</key>
+		<string>Guardians of the Galaxy</string>
+		<key>description</key>
+		<string>A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.</string>
+		<key>duration</key>
+		<string>2h 1min</string>
+		<key>genres</key>
+		<array>
+			<string>Action</string>
+			<string>Adventure</string>
+			<string>Comedy</string>
+		</array>
+		<key>releasedDate</key>
+		<string>1 August 2014</string>
+		<key>trailerLink</key>
+		<string>​https://www.youtube.com/watch?v=d96cjJhvlMA</string>
+		<key>imageName</key>
+		<string>Guardians of The Galaxy.png</string>
+		<key>rating</key>
+		<string>8.0</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>5</string>
+		<key>title</key>
+		<string>Avengers: Age of Ultron</string>
+		<key>description</key>
+		<string>When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it&apos;s up to Earth&apos;s mightiest heroes to stop the villainous Ultron from enacting his terrible plan.</string>
+		<key>duration</key>
+		<string>2h 21min</string>
+		<key>genres</key>
+		<array>
+			<string>Action</string>
+			<string>Adventure</string>
+			<string>Sci-Fi</string>
+		</array>
+		<key>releasedDate</key>
+		<string>1 May 2015</string>
+		<key>trailerLink</key>
+		<string>https://www.youtube.com/watch?v=tmeOjFno6Do</string>
+		<key>imageName</key>
+		<string>Avengers.png</string>
+		<key>rating</key>
+		<string>7.3</string>
+	</dict>
+</array>
+</plist>
