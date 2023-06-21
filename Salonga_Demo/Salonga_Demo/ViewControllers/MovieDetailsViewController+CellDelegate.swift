@@ -8,13 +8,13 @@
 import Foundation
 import WebKit
 
-extension MovieDetailsViewController: DetailsTableViewCellDelegate {
-    func didTapAddToWatchList(in detailsTableViewCell: DetailsTableViewCell) {
+extension MovieDetailsViewController: TopDetailsTableViewCellDelegate {
+    func didTapAddToWatchList(in detailsTableViewCell: TopDetailsTableViewCell) {
         delegate?.movieDetailsViewController(self, didToggleWatchListFor: viewModel.movieID)
     }
     
-    func didTapWatchTrailer(in detailsTableViewCell: DetailsTableViewCell) {
-        let webVC =  WebViewController(trailerURLString: viewModel.topDetailsCellViewModel.trailerURLString)
+    func didTapWatchTrailer(in detailsTableViewCell: TopDetailsTableViewCell) {
+        let webVC =  WebViewController(trailerURLString: viewModel.trailerURLString)
         present(webVC, animated: true)
     }
 

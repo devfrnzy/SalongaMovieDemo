@@ -10,7 +10,7 @@
 		0E230D676783A8CC8412DEE1 /* Pods_Salonga_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C28278C0AC269EC0D46F5F /* Pods_Salonga_Demo.framework */; };
 		F13572DD2A42933400E543AF /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572DC2A42933400E543AF /* MovieDetailsViewController.swift */; };
 		F13572DF2A42938500E543AF /* MovieDetailsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572DE2A42938500E543AF /* MovieDetailsViewController+Table.swift */; };
-		F13572E12A42955900E543AF /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E02A42955900E543AF /* DetailsTableViewCell.swift */; };
+		F13572E12A42955900E543AF /* TopDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E02A42955900E543AF /* TopDetailsTableViewCell.swift */; };
 		F13572E32A42957000E543AF /* MovieDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */; };
 		F13572E52A42958400E543AF /* BottomDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */; };
 		F13572E72A42A81E00E543AF /* MovieDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E62A42A81E00E543AF /* MovieDetailsCellViewModel.swift */; };
@@ -45,7 +45,7 @@
 		E6D8F74B9DCE8CCB41D60C82 /* Pods-Salonga_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salonga_Demo.release.xcconfig"; path = "Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		F13572DC2A42933400E543AF /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		F13572DE2A42938500E543AF /* MovieDetailsViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieDetailsViewController+Table.swift"; sourceTree = "<group>"; };
-		F13572E02A42955900E543AF /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		F13572E02A42955900E543AF /* TopDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		F13572E62A42A81E00E543AF /* MovieDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCellViewModel.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				F19AC0302A420D5C005D181F /* MovieTableViewCell.swift */,
-				F13572E02A42955900E543AF /* DetailsTableViewCell.swift */,
+				F13572E02A42955900E543AF /* TopDetailsTableViewCell.swift */,
 				F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */,
 				F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */,
 			);
@@ -355,7 +355,7 @@
 				F19AC0202A41FD99005D181F /* MoviesViewModel.swift in Sources */,
 				F13572DF2A42938500E543AF /* MovieDetailsViewController+Table.swift in Sources */,
 				F13572E72A42A81E00E543AF /* MovieDetailsCellViewModel.swift in Sources */,
-				F13572E12A42955900E543AF /* DetailsTableViewCell.swift in Sources */,
+				F13572E12A42955900E543AF /* TopDetailsTableViewCell.swift in Sources */,
 				F19AC0312A420D5C005D181F /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

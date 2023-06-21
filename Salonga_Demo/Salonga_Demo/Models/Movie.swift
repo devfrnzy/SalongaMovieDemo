@@ -53,7 +53,7 @@ class Movie: NSObject {
         dictionary["id"] = movieID
         dictionary["title"] = title
         dictionary["description"] = details
-        dictionary["ratings"] = "\(ratings)"
+        dictionary["rating"] = "\(ratings)"
         dictionary["duration"] = duration
         dictionary["genres"] = genres
         dictionary["trailerLink"] = trailerURLString

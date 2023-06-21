@@ -7,14 +7,14 @@
 
 import UIKit
 
-protocol DetailsTableViewCellDelegate: NSObject {
-    func didTapAddToWatchList(in detailsTableViewCell: DetailsTableViewCell)
-    func didTapWatchTrailer(in detailsTableViewCell: DetailsTableViewCell)
+protocol TopDetailsTableViewCellDelegate: NSObject {
+    func didTapAddToWatchList(in detailsTableViewCell: TopDetailsTableViewCell)
+    func didTapWatchTrailer(in detailsTableViewCell: TopDetailsTableViewCell)
 }
 
-class DetailsTableViewCell: UITableViewCell {
+class TopDetailsTableViewCell: UITableViewCell {
 
-    weak var delegate: DetailsTableViewCellDelegate?
+    weak var delegate: TopDetailsTableViewCellDelegate?
     
     lazy var watchTrailerButton: UIButton = {
         let button = UIButton()
@@ -23,8 +23,8 @@ class DetailsTableViewCell: UITableViewCell {
         button.backgroundColor = .white
         button.layer.borderColor = UIColor.darkGray.cgColor
         button.layer.borderWidth = 1
-        button.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
-        button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
+        button.titleLabel?.font = .systemFont(ofSize: SizeHelper.scale(13), weight: .bold)
+        button.contentEdgeInsets = UIEdgeInsets(top: SizeHelper.scale(5), left: SizeHelper.scale(20), bottom: SizeHelper.scale(5), right: SizeHelper.scale(20))
         button.addTarget(self, action: #selector(didTapWatchTrailerButton(_:)), for: .touchUpInside)
         return button
     }()
@@ -34,8 +34,8 @@ class DetailsTableViewCell: UITableViewCell {
         button.setTitle("+ ADD TO WATCHLIST", for: .normal)
         button.setTitleColor(.darkGray, for: .normal)
         button.backgroundColor = .init(red: 240/255, green: 238/255, blue: 235/255, alpha: 1.0)
-        button.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
-        button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
+        button.titleLabel?.font = .systemFont(ofSize: SizeHelper.scale(13), weight: .bold)
+        button.contentEdgeInsets = UIEdgeInsets(top: SizeHelper.scale(5), left: SizeHelper.scale(10), bottom: SizeHelper.scale(5), right: SizeHelper.scale(10))
         button.addTarget(self, action: #selector(didTapAddToWatchListButton(_:)), for: .touchUpInside)
 
         return button
@@ -49,7 +49,7 @@ class DetailsTableViewCell: UITableViewCell {
     
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.font = .systemFont(ofSize: 18, weight: .bold)
+        titleLabel.font = .systemFont(ofSize: SizeHelper.scale(18), weight: .bold)
         titleLabel.numberOfLines = 0
         return titleLabel
     }()
@@ -79,43 +79,43 @@ class DetailsTableViewCell: UITableViewCell {
         
         posterImageView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.leading.leading.equalTo(20)
-            make.top.equalTo(20)
-            make.bottom.equalTo(-20)
-            make.width.equalToSuperview().multipliedBy(0.35)
-            make.height.equalTo(200)
+            make.leading.leading.equalTo(SizeHelper.scale(20))
+            make.top.equalTo(SizeHelper.scale(20))
+            make.bottom.equalTo(SizeHelper.scale(-20))
+            make.width.equalToSuperview().multipliedBy(0.3)
+            make.height.equalTo(SizeHelper.scale(200))
         }
         
         ratingLabel.snp.makeConstraints { make in
             make.top.equalTo(titleLabel)
-            make.trailing.equalTo(-5)
+            make.trailing.equalTo(SizeHelper.scale(-5))
         }
         
         ratingLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(posterImageView).offset(10)
-            make.leading.equalTo(posterImageView.snp.trailing).offset(10)
-            make.trailing.equalTo(ratingLabel.snp.leading).offset(-15)
+            make.top.equalTo(posterImageView).offset(SizeHelper.scale(10))
+            make.leading.equalTo(posterImageView.snp.trailing).offset(SizeHelper.scale(10))
+            make.trailing.equalTo(ratingLabel.snp.leading).offset(SizeHelper.scale(-15))
         }
         titleLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         
         watchTrailerButton.snp.makeConstraints { make in
             make.leading.equalTo(titleLabel)
-            make.height.equalTo(30)
-            make.bottom.lessThanOrEqualTo(posterImageView).offset(-5)
+            make.height.equalTo(SizeHelper.scale(30))
+            make.bottom.lessThanOrEqualTo(posterImageView).offset(SizeHelper.scale(-5))
         }
-        watchTrailerButton.layer.cornerRadius = 15
+        watchTrailerButton.layer.cornerRadius = SizeHelper.scale(15)
         
         addToWatchListButton.snp.makeConstraints { make in
             make.leading.equalTo(titleLabel)
             make.height.equalTo(30)
-            make.bottom.equalTo(watchTrailerButton.snp.top).offset(-20)
-            make.trailing.lessThanOrEqualTo(-5)
-            make.top.equalTo(titleLabel.snp.bottom).offset(20)
+            make.bottom.equalTo(watchTrailerButton.snp.top).offset(SizeHelper.scale(-20))
+            make.trailing.lessThanOrEqualTo(SizeHelper.scale(-5))
+            make.top.equalTo(titleLabel.snp.bottom).offset(SizeHelper.scale(20))
         }
         
-        addToWatchListButton.layer.cornerRadius = 15
+        addToWatchListButton.layer.cornerRadius = SizeHelper.scale(15)
     }
     
     func update(with viewModel: MovieDetailsCellViewModel) {

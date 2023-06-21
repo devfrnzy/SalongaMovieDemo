@@ -13,21 +13,22 @@ class MovieDetailsCellViewModel: NSObject {
     let imageName: String
     let rating: Float
     let onWatchList: Bool
-    let trailerURLString: String
     
     lazy var attributedRating: NSAttributedString = {
-        let ratingStr = "\(rating)"
-        let attString = NSMutableAttributedString(string: "\(ratingStr)/10")
-        attString.addAttribute(.font, value: UIFont.systemFont(ofSize: 18), range: .init(location: 0, length: ratingStr.count))
-        attString.addAttribute(.foregroundColor, value: UIColor.black, range: .init(location: 0, length: ratingStr.count))
+        let ratingStr = "\(rating)" as NSString
+        let fullRatingStr = "\(ratingStr)/10"
+        let attString = NSMutableAttributedString(string: fullRatingStr)
+        let range = NSMakeRange(0, ratingStr.length)
+        
+        attString.addAttribute(.font, value: UIFont.systemFont(ofSize: SizeHelper.scale(20), weight: .bold), range: range)
+        attString.addAttribute(.foregroundColor, value: UIColor.black, range:  range)
         return attString
     }()
     
-    init(title: String, imageName: String, rating: Float, onWatchList: Bool, trailerURLString: String) {
+    init(title: String, imageName: String, rating: Float, onWatchList: Bool) {
         self.title = title
         self.imageName = imageName
         self.rating = rating
         self.onWatchList = onWatchList
-        self.trailerURLString = trailerURLString
     }
 }

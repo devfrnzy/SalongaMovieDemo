@@ -11,7 +11,7 @@ class MovieTableViewCell: UITableViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .bold)
+        label.font = .systemFont(ofSize: SizeHelper.scale(18), weight: .bold)
         label.textColor = .black
         label.numberOfLines = 2
         return label
@@ -19,7 +19,7 @@ class MovieTableViewCell: UITableViewCell {
     
     let subtitleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 14, weight: .light)
+        label.font = .systemFont(ofSize: SizeHelper.scale(14), weight: .light)
         label.textColor = .gray
         label.numberOfLines = 2
         return label
@@ -28,7 +28,7 @@ class MovieTableViewCell: UITableViewCell {
     let onWatchListLabel: UILabel = {
         let label = UILabel()
         label.text = "ON MY WATCHLIST"
-        label.font = .systemFont(ofSize: 12, weight: .heavy)
+        label.font = .systemFont(ofSize: SizeHelper.scale(12), weight: .heavy)
         label.textColor = .darkGray
         label.isHidden = true
         return label
@@ -62,16 +62,16 @@ class MovieTableViewCell: UITableViewCell {
         
         posterImageView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.leading.leading.equalTo(20)
-            make.top.equalTo(20)
-            make.bottom.equalTo(-20)
+            make.leading.leading.equalTo(SizeHelper.scale(20))
+            make.top.equalTo(SizeHelper.scale(20))
+            make.bottom.equalTo(SizeHelper.scale(-20))
             make.width.equalToSuperview().multipliedBy(0.28)
         }
         
         labelContainer.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.leading.equalTo(posterImageView.snp.trailing).offset(10)
-            make.trailing.equalTo(-10)
+            make.leading.equalTo(posterImageView.snp.trailing).offset(SizeHelper.scale(10))
+            make.trailing.equalTo(SizeHelper.scale(-10))
             make.top.greaterThanOrEqualTo(10)
         }
         
@@ -81,15 +81,15 @@ class MovieTableViewCell: UITableViewCell {
         
         subtitleLabel.snp.makeConstraints { make in
             make.leading.trailing.bottom.equalToSuperview()
-            make.top.equalTo(titleLabel.snp.bottom).offset(5)
+            make.top.equalTo(titleLabel.snp.bottom).offset(SizeHelper.scale(5))
         }
         
         onWatchListLabel.snp.makeConstraints { make in
-            make.top.greaterThanOrEqualTo(labelContainer.snp.bottom).offset(5).priority(900)
-            make.bottom.equalTo(posterImageView.snp.bottom).offset(-10)
+            make.top.greaterThanOrEqualTo(labelContainer.snp.bottom).offset(SizeHelper.scale(5)).priority(900)
+            make.bottom.equalTo(posterImageView.snp.bottom).offset(SizeHelper.scale(-10))
             make.leading.equalTo(labelContainer)
-            make.trailing.equalTo(15)
-            make.height.equalTo(10)
+            make.trailing.equalTo(SizeHelper.scale(15))
+            make.height.equalTo(SizeHelper.scale(10))
         }
     }
     

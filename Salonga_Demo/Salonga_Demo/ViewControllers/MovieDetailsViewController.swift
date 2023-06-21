@@ -22,7 +22,7 @@ class MovieDetailsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 300
-        tableView.register(DetailsTableViewCell.self, forCellReuseIdentifier: String(describing: DetailsTableViewCell.self))
+        tableView.register(TopDetailsTableViewCell.self, forCellReuseIdentifier: String(describing: TopDetailsTableViewCell.self))
         tableView.register(MovieDescriptionTableViewCell.self, forCellReuseIdentifier: String(describing: MovieDescriptionTableViewCell.self))
         tableView.register(BottomDetailsTableViewCell.self, forCellReuseIdentifier: String(describing: BottomDetailsTableViewCell.self))
         return tableView

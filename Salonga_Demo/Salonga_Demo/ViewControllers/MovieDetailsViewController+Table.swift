@@ -15,7 +15,7 @@ extension MovieDetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:DetailsTableViewCell.self)) as? DetailsTableViewCell{
+            if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:TopDetailsTableViewCell.self)) as? TopDetailsTableViewCell{
                 cell.delegate = self
                 cell.update(with: viewModel.topDetailsCellViewModel)
                 return cell

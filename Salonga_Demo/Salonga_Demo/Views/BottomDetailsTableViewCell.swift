@@ -11,7 +11,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .bold)
+        label.font = .systemFont(ofSize: SizeHelper.scale(18), weight: .bold)
         label.textColor = .darkGray
         label.text = "Details"
         return label
@@ -19,7 +19,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let genreTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 12, weight: .medium)
+        label.font = .systemFont(ofSize: SizeHelper.scale(12), weight: .medium)
         label.text = "Genre"
         label.textAlignment = .right
         return label
@@ -27,7 +27,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let genreLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 12)
+        label.font = .systemFont(ofSize: SizeHelper.scale(12))
         label.textAlignment = .left
         label.textColor = .darkGray
         return label
@@ -35,7 +35,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let releasedDateTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 12, weight: .medium)
+        label.font = .systemFont(ofSize: SizeHelper.scale(12), weight: .medium)
         label.textAlignment = .right
         label.text = "Released Date"
         return label
@@ -43,7 +43,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let releasedDateLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 12)
+        label.font = .systemFont(ofSize: SizeHelper.scale(12))
         label.textAlignment = .left
         label.textColor = .darkGray
         return label
@@ -73,7 +73,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
         }
         
         genreTitleLabel.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.top.equalTo(titleLabel.snp.bottom).offset(SizeHelper.scale(10))
             make.leading.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.38)
             make.height.equalTo(genreLabel)
@@ -81,21 +81,21 @@ class BottomDetailsTableViewCell: UITableViewCell {
         
         genreLabel.snp.makeConstraints { make in
             make.top.equalTo(genreTitleLabel)
-            make.leading.equalTo(genreTitleLabel.snp.trailing).offset(5)
+            make.leading.equalTo(genreTitleLabel.snp.trailing).offset(SizeHelper.scale(5))
             make.trailing.equalToSuperview()
         }
         
         releasedDateTitleLabel.snp.makeConstraints { make in
-            make.top.equalTo(genreTitleLabel.snp.bottom).offset(5)
+            make.top.equalTo(genreTitleLabel.snp.bottom).offset(SizeHelper.scale(5))
             make.leading.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.38)
         }
         
         releasedDateLabel.snp.makeConstraints { make in
             make.top.equalTo(releasedDateTitleLabel)
-            make.leading.equalTo(releasedDateTitleLabel.snp.trailing).offset(5)
+            make.leading.equalTo(releasedDateTitleLabel.snp.trailing).offset(SizeHelper.scale(5))
             make.trailing.equalToSuperview()
-            make.bottom.equalTo(-20)
+            make.bottom.equalTo(SizeHelper.scale(-20))
         }
     }
     
