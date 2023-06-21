@@ -37,7 +37,7 @@ class Movie: NSObject {
         movieID = dictionary["id"] as? String ?? ""
         title = dictionary["title"] as? String ?? ""
         details = dictionary["description"] as? String ?? ""
-        ratings = dictionary["ratings"] as? Float ?? 0.0
+        ratings = Float(dictionary["rating"] as? String ?? "0.0") ?? 0.0
         duration = dictionary["duration"] as? String ?? ""
         genres = dictionary["genres"] as? [String] ?? ["-"]
         trailerURLString = dictionary["trailerURL"] as? String ?? ""
@@ -46,6 +46,20 @@ class Movie: NSObject {
         
         let dateString = dictionary["releasedDate"] as? String ?? ""
         releasedDate = Date(from: dateString, with: "dd MMMM yyyy")
+    }
+    
+    func dictionaryValue() -> [AnyHashable: Any] {
+        var dictionary = [AnyHashable: Any]()
+        dictionary["id"] = movieID
+        dictionary["title"] = title
+        dictionary["details"] = details
+        dictionary["ratings"] = "\(ratings)"
+        dictionary["duration"] = duration
+        dictionary["genres"] = genres
+        dictionary["trailerURL"] = trailerURLString
+        dictionary["onWatchList"] = onWatchList
+        dictionary["imageName"] = imageName
+        return dictionary
     }
     
 }

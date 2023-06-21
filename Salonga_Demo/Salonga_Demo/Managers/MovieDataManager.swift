@@ -11,7 +11,20 @@ class MovieDataManager: NSObject {
     
     private(set) var movies = Array<Movie>()
     
+    func processData() {
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+    
+    }
+    
+    func convertMoviesArrayToDictionaryArray() -> Array<Dictionary<AnyHashable, Any>> {
+        
+    }
+    
     func processPlistData() {
+        
+        
+        
         guard let url = Bundle.main.url(forResource: "Movies", withExtension: "plist"),
               let movieData = try? Data(contentsOf: url),
               let moviesPlist = try? PropertyListSerialization.propertyList(from: movieData, options: [], format: nil) as? Array<Dictionary<AnyHashable, Any>>

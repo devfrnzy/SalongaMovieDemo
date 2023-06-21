@@ -39,6 +39,8 @@ extension AppManager: MoviesViewControllerDelegate {
         }
         
         let movieDetailsViewModel = MovieDetailsViewModel(with: movie)
+        let vc = MovieDetailsViewController(viewModel: movieDetailsViewModel)
+        navigationViewController.pushViewController(vc, animated: true)
     }
     
 }

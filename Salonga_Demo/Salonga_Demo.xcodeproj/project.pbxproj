@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0E230D676783A8CC8412DEE1 /* Pods_Salonga_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C28278C0AC269EC0D46F5F /* Pods_Salonga_Demo.framework */; };
+		F13572DD2A42933400E543AF /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572DC2A42933400E543AF /* MovieDetailsViewController.swift */; };
+		F13572DF2A42938500E543AF /* MovieDetailsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572DE2A42938500E543AF /* MovieDetailsViewController+Table.swift */; };
+		F13572E12A42955900E543AF /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E02A42955900E543AF /* DetailsTableViewCell.swift */; };
+		F13572E32A42957000E543AF /* MovieDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */; };
+		F13572E52A42958400E543AF /* BottomDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */; };
+		F13572E72A42A81E00E543AF /* MovieDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E62A42A81E00E543AF /* MovieDetailsCellViewModel.swift */; };
 		F19ABFFE2A41F347005D181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19ABFFD2A41F347005D181F /* AppDelegate.swift */; };
 		F19AC0002A41F347005D181F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19ABFFF2A41F347005D181F /* SceneDelegate.swift */; };
 		F19AC0072A41F348005D181F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0062A41F348005D181F /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 		12C28278C0AC269EC0D46F5F /* Pods_Salonga_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salonga_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAFEFBBA5ACE0C0C4AE1C91 /* Pods-Salonga_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salonga_Demo.debug.xcconfig"; path = "Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		E6D8F74B9DCE8CCB41D60C82 /* Pods-Salonga_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salonga_Demo.release.xcconfig"; path = "Target Support Files/Pods-Salonga_Demo/Pods-Salonga_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F13572DC2A42933400E543AF /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		F13572DE2A42938500E543AF /* MovieDetailsViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieDetailsViewController+Table.swift"; sourceTree = "<group>"; };
+		F13572E02A42955900E543AF /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		F13572E62A42A81E00E543AF /* MovieDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCellViewModel.swift; sourceTree = "<group>"; };
 		F19ABFFA2A41F347005D181F /* Salonga_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salonga_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19ABFFD2A41F347005D181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19ABFFF2A41F347005D181F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,7 +122,6 @@
 		F19ABFFC2A41F347005D181F /* Salonga_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				F19AC0322A421E04005D181F /* Resources */,
 				F19AC00B2A41F348005D181F /* Info.plist */,
 				F19ABFFD2A41F347005D181F /* AppDelegate.swift */,
 				F19ABFFF2A41F347005D181F /* SceneDelegate.swift */,
@@ -120,6 +131,7 @@
 				F19AC0292A420BA4005D181F /* ViewModels */,
 				F19AC02A2A420BCB005D181F /* Models */,
 				F19AC02E2A420CC8005D181F /* Helpers */,
+				F19AC0322A421E04005D181F /* Resources */,
 				F19AC0062A41F348005D181F /* Assets.xcassets */,
 				F19AC0082A41F348005D181F /* LaunchScreen.storyboard */,
 				F19AC0192A41F799005D181F /* Movies.plist */,
@@ -133,6 +145,7 @@
 				F19AC0272A42070D005D181F /* MovieDetailsViewModel.swift */,
 				F19AC0232A41FF50005D181F /* MoviesCellViewModel.swift */,
 				F19AC01F2A41FD99005D181F /* MoviesViewModel.swift */,
+				F13572E62A42A81E00E543AF /* MovieDetailsCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -150,6 +163,8 @@
 			children = (
 				F19AC0112A41F462005D181F /* MoviesViewController.swift */,
 				F19AC0152A41F5FC005D181F /* MoviesViewController+Table.swift */,
+				F13572DC2A42933400E543AF /* MovieDetailsViewController.swift */,
+				F13572DE2A42938500E543AF /* MovieDetailsViewController+Table.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				F19AC0302A420D5C005D181F /* MovieTableViewCell.swift */,
+				F13572E02A42955900E543AF /* DetailsTableViewCell.swift */,
+				F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */,
+				F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,10 +338,16 @@
 				F19AC0262A420236005D181F /* Date+Components.swift in Sources */,
 				F19AC01E2A41FCAD005D181F /* AppManager.swift in Sources */,
 				F19AC0282A42070D005D181F /* MovieDetailsViewModel.swift in Sources */,
+				F13572E52A42958400E543AF /* BottomDetailsTableViewCell.swift in Sources */,
+				F13572E32A42957000E543AF /* MovieDescriptionTableViewCell.swift in Sources */,
 				F19AC0242A41FF50005D181F /* MoviesCellViewModel.swift in Sources */,
 				F19AC01C2A41F9D6005D181F /* Movie.swift in Sources */,
+				F13572DD2A42933400E543AF /* MovieDetailsViewController.swift in Sources */,
 				F19AC0122A41F462005D181F /* MoviesViewController.swift in Sources */,
 				F19AC0202A41FD99005D181F /* MoviesViewModel.swift in Sources */,
+				F13572DF2A42938500E543AF /* MovieDetailsViewController+Table.swift in Sources */,
+				F13572E72A42A81E00E543AF /* MovieDetailsCellViewModel.swift in Sources */,
+				F13572E12A42955900E543AF /* DetailsTableViewCell.swift in Sources */,
 				F19AC0312A420D5C005D181F /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

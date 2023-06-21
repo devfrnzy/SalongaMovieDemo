@@ -21,6 +21,7 @@ class MoviesViewController: UIViewController {
     init(moviesViewModel: MoviesViewModel) {
         self.moviesViewModel = moviesViewModel
         super.init(nibName: nil, bundle: nil)
+        self.title = "Movies"
     }
     
     required init?(coder: NSCoder) {
@@ -58,15 +59,34 @@ class MoviesViewController: UIViewController {
     }
     
     func setupNavigationBar() {
-//        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 44))
-//        view.addSubview(navBar)
-//        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(didTapSort:))
-//        navItem.rightBarButtonItem = doneItem
-//
-//        navBar.setItems([navItem], animated: false)
+
+        let sortButton = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: #selector(didTapSort(_:)))
+        sortButton.tintColor = .black
+        self.navigationItem.rightBarButtonItems = [sortButton]
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.clear]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
     
-    @objc func didTapSort() {
+    @objc func didTapSort(_ sender: UIBarButtonItem) {
+        let byTitleAction = UIAlertAction(title: "Title",
+                                          style: .default) { (action) in
+            self.moviesViewModel.sort(by: .name)
+            self.tableView.reloadData()
+        }
+        let byDateAction = UIAlertAction(title: "Released Date",
+                                         style: .default) { (action) in
+            self.moviesViewModel.sort(by: .releasedDate)
+            self.tableView.reloadData()
+        }
         
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        let alert = UIAlertController(title: nil,
+                                      message: nil,
+                                      preferredStyle: .actionSheet)
+        alert.addAction(byTitleAction)
+        alert.addAction(byDateAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
     }
 }

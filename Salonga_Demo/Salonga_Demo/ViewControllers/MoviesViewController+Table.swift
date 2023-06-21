@@ -28,7 +28,8 @@ extension MoviesViewController:UITableViewDataSource {
 extension MoviesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let movieCellViewModel = moviesViewModel.moviesCellModels[indexPath.row]
+        delegate?.moviesViewController(self, didSelectMovieWith: movieCellViewModel.movieID)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

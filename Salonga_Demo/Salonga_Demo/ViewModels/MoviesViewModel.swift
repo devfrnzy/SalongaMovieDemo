@@ -29,6 +29,18 @@ class MoviesViewModel: NSObject {
             moviesCellModels.append(movieCellViewModel)
         }
         
+        super.init()
+        sort(by: .name)
+    }
+    
+    func sort(by type: SortType) {
+        switch type {
+        case .name:
+            moviesCellModels.sort { $0.title < $1.title }
+            break
+        case .releasedDate:
+            moviesCellModels.sort { $0.releasedDate > $1.releasedDate }
+        }
         
     }
 }
