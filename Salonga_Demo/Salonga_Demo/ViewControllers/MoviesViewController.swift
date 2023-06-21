@@ -10,6 +10,7 @@ import SnapKit
 
 protocol MoviesViewControllerDelegate: NSObject {
     func moviesViewController(_ moviesViewController: MoviesViewController, didSelectMovieWith movieID: String)
+    func refreshViewModelsForMoviesViewController(_ moviesViewController: MoviesViewController)
 }
 
 class MoviesViewController: UIViewController {
@@ -50,11 +51,16 @@ class MoviesViewController: UIViewController {
         setupNavigationBar()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        delegate?.refreshViewModelsForMoviesViewController(self)
+    }
+    
     func setupViews() {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.bottom.leading.trailing.equalToSuperview()
-            make.top.equalTo(SizeHelper.NavBarHeight + SizeHelper.statusBarHeight(from: view)) 
+            make.top.equalTo(SizeHelper.NavBarHeight + SizeHelper.statusBarHeight(from: view))
         }
     }
     
@@ -65,6 +71,11 @@ class MoviesViewController: UIViewController {
         self.navigationItem.rightBarButtonItems = [sortButton]
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.clear]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
+    
+    func update(with viewModel: MoviesViewModel) {
+        moviesViewModel = viewModel
+        tableView.reloadData()
     }
     
     @objc func didTapSort(_ sender: UIBarButtonItem) {

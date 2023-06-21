@@ -45,6 +45,7 @@ class MovieTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupViews()
     }
     
@@ -96,7 +97,7 @@ class MovieTableViewCell: UITableViewCell {
         titleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.subtitle
         posterImageView.image = .init(named: viewModel.imageName)
-        onWatchListLabel.isHidden = viewModel.onWatchList
+        onWatchListLabel.isHidden = !viewModel.onWatchList
     }
     
 }

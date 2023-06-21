@@ -17,7 +17,7 @@ class Movie: NSObject {
     let genres: [String]
     let releasedDate: Date
     let trailerURLString: String
-    let onWatchList: Bool
+    var onWatchList: Bool
     let imageName: String
     
     init(movieID: String, title: String, details: String, ratings: Float, duration: String, genres: [String], releasedDate: Date, trailerURLString: String, onWatchList: Bool, imageName: String) {
@@ -40,7 +40,7 @@ class Movie: NSObject {
         ratings = Float(dictionary["rating"] as? String ?? "0.0") ?? 0.0
         duration = dictionary["duration"] as? String ?? ""
         genres = dictionary["genres"] as? [String] ?? ["-"]
-        trailerURLString = dictionary["trailerURL"] as? String ?? ""
+        trailerURLString = dictionary["trailerLink"] as? String ?? ""
         onWatchList = dictionary["onWatchList"] as? Bool ?? false
         imageName = dictionary["imageName"] as? String ?? ""
         
@@ -52,11 +52,11 @@ class Movie: NSObject {
         var dictionary = [AnyHashable: Any]()
         dictionary["id"] = movieID
         dictionary["title"] = title
-        dictionary["details"] = details
+        dictionary["description"] = details
         dictionary["ratings"] = "\(ratings)"
         dictionary["duration"] = duration
         dictionary["genres"] = genres
-        dictionary["trailerURL"] = trailerURLString
+        dictionary["trailerLink"] = trailerURLString
         dictionary["onWatchList"] = onWatchList
         dictionary["imageName"] = imageName
         return dictionary

@@ -14,6 +14,8 @@
 		F13572E32A42957000E543AF /* MovieDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */; };
 		F13572E52A42958400E543AF /* BottomDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */; };
 		F13572E72A42A81E00E543AF /* MovieDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E62A42A81E00E543AF /* MovieDetailsCellViewModel.swift */; };
+		F13572E92A42F0F700E543AF /* MovieDetailsViewController+CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572E82A42F0F700E543AF /* MovieDetailsViewController+CellDelegate.swift */; };
+		F13572EB2A42F70900E543AF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13572EA2A42F70900E543AF /* WebViewController.swift */; };
 		F19ABFFE2A41F347005D181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19ABFFD2A41F347005D181F /* AppDelegate.swift */; };
 		F19AC0002A41F347005D181F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19ABFFF2A41F347005D181F /* SceneDelegate.swift */; };
 		F19AC0072A41F348005D181F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19AC0062A41F348005D181F /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		F13572E22A42957000E543AF /* MovieDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		F13572E42A42958400E543AF /* BottomDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		F13572E62A42A81E00E543AF /* MovieDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCellViewModel.swift; sourceTree = "<group>"; };
+		F13572E82A42F0F700E543AF /* MovieDetailsViewController+CellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieDetailsViewController+CellDelegate.swift"; sourceTree = "<group>"; };
+		F13572EA2A42F70900E543AF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F19ABFFA2A41F347005D181F /* Salonga_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salonga_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19ABFFD2A41F347005D181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19ABFFF2A41F347005D181F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				F19AC0152A41F5FC005D181F /* MoviesViewController+Table.swift */,
 				F13572DC2A42933400E543AF /* MovieDetailsViewController.swift */,
 				F13572DE2A42938500E543AF /* MovieDetailsViewController+Table.swift */,
+				F13572E82A42F0F700E543AF /* MovieDetailsViewController+CellDelegate.swift */,
+				F13572EA2A42F70900E543AF /* WebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -334,9 +340,11 @@
 				F19AC0162A41F5FC005D181F /* MoviesViewController+Table.swift in Sources */,
 				F19AC0142A41F493005D181F /* GlobalHelpers.swift in Sources */,
 				F19AC0182A41F77D005D181F /* MovieDataManager.swift in Sources */,
+				F13572EB2A42F70900E543AF /* WebViewController.swift in Sources */,
 				F19AC0002A41F347005D181F /* SceneDelegate.swift in Sources */,
 				F19AC0262A420236005D181F /* Date+Components.swift in Sources */,
 				F19AC01E2A41FCAD005D181F /* AppManager.swift in Sources */,
+				F13572E92A42F0F700E543AF /* MovieDetailsViewController+CellDelegate.swift in Sources */,
 				F19AC0282A42070D005D181F /* MovieDetailsViewModel.swift in Sources */,
 				F13572E52A42958400E543AF /* BottomDetailsTableViewCell.swift in Sources */,
 				F13572E32A42957000E543AF /* MovieDescriptionTableViewCell.swift in Sources */,

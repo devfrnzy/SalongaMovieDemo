@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol MovieDetailsViewControllerDelegate: NSObject {
+    
+    func movieDetailsViewController(_ movieDetailsViewController: MovieDetailsViewController, didToggleWatchListFor movieID: String)
+    
+}
+
 class MovieDetailsViewController: UIViewController {
     
-    
+    weak var delegate: MovieDetailsViewControllerDelegate?
     
     lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -45,5 +51,10 @@ class MovieDetailsViewController: UIViewController {
             make.bottom.leading.trailing.equalToSuperview()
             make.top.equalTo(SizeHelper.NavBarHeight + SizeHelper.statusBarHeight(from: view))
         }
+    }
+    
+    func update(with viewModel: MovieDetailsViewModel) {
+        self.viewModel = viewModel
+        tableView.reloadData()
     }
 }

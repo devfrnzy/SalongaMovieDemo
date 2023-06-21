@@ -7,8 +7,15 @@
 
 import UIKit
 
+protocol DetailsTableViewCellDelegate: NSObject {
+    func didTapAddToWatchList(in detailsTableViewCell: DetailsTableViewCell)
+    func didTapWatchTrailer(in detailsTableViewCell: DetailsTableViewCell)
+}
+
 class DetailsTableViewCell: UITableViewCell {
 
+    weak var delegate: DetailsTableViewCellDelegate?
+    
     lazy var watchTrailerButton: UIButton = {
         let button = UIButton()
         button.setTitle("WATCH TRAILER", for: .normal)
@@ -18,6 +25,7 @@ class DetailsTableViewCell: UITableViewCell {
         button.layer.borderWidth = 1
         button.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
         button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
+        button.addTarget(self, action: #selector(didTapWatchTrailerButton(_:)), for: .touchUpInside)
         return button
     }()
     
@@ -28,6 +36,7 @@ class DetailsTableViewCell: UITableViewCell {
         button.backgroundColor = .init(red: 240/255, green: 238/255, blue: 235/255, alpha: 1.0)
         button.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
         button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
+        button.addTarget(self, action: #selector(didTapAddToWatchListButton(_:)), for: .touchUpInside)
 
         return button
     }()
@@ -50,9 +59,10 @@ class DetailsTableViewCell: UITableViewCell {
         label.textAlignment = .right
         return label
     }()
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupViews()
     }
     
@@ -120,6 +130,14 @@ class DetailsTableViewCell: UITableViewCell {
         let buttonText = toggle ? "REMOVE FROM WATCHLIST" : "+ ADD TO WATCH LIST"
         addToWatchListButton.setTitle(buttonText, for: .normal)
         addToWatchListButton.sizeToFit()
+    }
+    
+    @objc func didTapWatchTrailerButton(_ button: UIButton) {
+        delegate?.didTapWatchTrailer(in: self)
+    }
+    
+    @objc func didTapAddToWatchListButton(_ button: UIButton) {
+        delegate?.didTapAddToWatchList(in: self)
     }
 
 }
