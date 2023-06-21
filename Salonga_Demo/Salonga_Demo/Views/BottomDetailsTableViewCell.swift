@@ -12,14 +12,14 @@ class BottomDetailsTableViewCell: UITableViewCell {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: SizeHelper.scale(18), weight: .bold)
-        label.textColor = .darkGray
+        label.textColor = .black
         label.text = "Details"
         return label
     }()
     
     let genreTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: SizeHelper.scale(12), weight: .medium)
+        label.font = .systemFont(ofSize: SizeHelper.scale(15), weight: .medium)
         label.text = "Genre"
         label.textAlignment = .right
         return label
@@ -27,7 +27,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let genreLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: SizeHelper.scale(12))
+        label.font = .systemFont(ofSize: SizeHelper.scale(15))
         label.textAlignment = .left
         label.textColor = .darkGray
         return label
@@ -35,7 +35,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let releasedDateTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: SizeHelper.scale(12), weight: .medium)
+        label.font = .systemFont(ofSize: SizeHelper.scale(15), weight: .medium)
         label.textAlignment = .right
         label.text = "Released Date"
         return label
@@ -43,7 +43,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     
     let releasedDateLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: SizeHelper.scale(12))
+        label.font = .systemFont(ofSize: SizeHelper.scale(15))
         label.textAlignment = .left
         label.textColor = .darkGray
         return label
@@ -52,6 +52,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
+        separatorInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: CGFloat.greatestFiniteMagnitude/2.0)
         setupViews()
     }
     
@@ -69,7 +70,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
         titleLabel.snp.makeConstraints { make in
             make.leading.equalTo(20)
             make.trailing.equalTo(10)
-            make.top.equalTo(10)
+            make.top.equalTo(25)
         }
         
         genreTitleLabel.snp.makeConstraints { make in
@@ -95,7 +96,7 @@ class BottomDetailsTableViewCell: UITableViewCell {
             make.top.equalTo(releasedDateTitleLabel)
             make.leading.equalTo(releasedDateTitleLabel.snp.trailing).offset(SizeHelper.scale(5))
             make.trailing.equalToSuperview()
-            make.bottom.equalTo(SizeHelper.scale(-20))
+            make.bottom.equalTo(SizeHelper.scale(-25))
         }
     }
     

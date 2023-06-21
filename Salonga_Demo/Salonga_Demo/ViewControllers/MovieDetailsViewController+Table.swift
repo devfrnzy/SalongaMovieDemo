@@ -42,7 +42,3 @@ extension MovieDetailsViewController: UITableViewDataSource {
     
     
 }
-
-extension MovieDetailsViewController: UITableViewDelegate {
-    
-}

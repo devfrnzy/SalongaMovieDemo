@@ -58,6 +58,7 @@ class Movie: NSObject {
         dictionary["genres"] = genres
         dictionary["trailerLink"] = trailerURLString
         dictionary["onWatchList"] = onWatchList
+        dictionary["releasedDate"] = releasedDate.string(with: "dd MMMM yyyy")
         dictionary["imageName"] = imageName
         return dictionary
     }

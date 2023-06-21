@@ -19,7 +19,6 @@ class MovieDetailsViewController: UIViewController {
     
     lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 300
         tableView.register(TopDetailsTableViewCell.self, forCellReuseIdentifier: String(describing: TopDetailsTableViewCell.self))

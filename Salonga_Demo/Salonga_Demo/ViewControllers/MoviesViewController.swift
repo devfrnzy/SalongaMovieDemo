@@ -17,6 +17,7 @@ class MoviesViewController: UIViewController {
     
     weak var delegate: MoviesViewControllerDelegate?
     var moviesViewModel: MoviesViewModel
+    var sortType: MoviesViewModel.SortType = .name
     
     
     init(moviesViewModel: MoviesViewModel) {
@@ -75,6 +76,7 @@ class MoviesViewController: UIViewController {
     
     func update(with viewModel: MoviesViewModel) {
         moviesViewModel = viewModel
+        moviesViewModel.sort(by: sortType)
         tableView.reloadData()
     }
     
@@ -82,11 +84,13 @@ class MoviesViewController: UIViewController {
         let byTitleAction = UIAlertAction(title: "Title",
                                           style: .default) { (action) in
             self.moviesViewModel.sort(by: .name)
+            self.sortType = .name
             self.tableView.reloadData()
         }
         let byDateAction = UIAlertAction(title: "Released Date",
                                          style: .default) { (action) in
             self.moviesViewModel.sort(by: .releasedDate)
+            self.sortType = .releasedDate
             self.tableView.reloadData()
         }
         
